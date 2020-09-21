@@ -13,7 +13,7 @@ class BaseStrategy:
             if random.randint(0, len(self.envelopes) - 1) == 0:
                 print(f"I have a strong feeling about this one- ({envelope.value}$)")
                 return
-        print(f"Didn't have a good feeling for any of them so we use last one- ({envelope.value}$)")
+        print(f"Didn't have a good feeling for any of them so we use last one- ({self[99]}$)")
 
     def display(self):
         return "Finds by feeling"
